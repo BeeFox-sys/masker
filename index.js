@@ -12,7 +12,7 @@ client.once('ready', () => {
 
 client.on("message",async (message)=>{
     if(!message.guild) return
-    if(message.content != "!mask") return
+    if(message.content != "?mask") return
 
     if(!message.guild.me.permissions.has("MANAGE_NICKNAMES")) return message.channel.send("Missing Permissions to change nickname! You cannot don the mask of **"+toTitleCase(randName(message.author.id+message.guild.id))+"**")
 
