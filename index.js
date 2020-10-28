@@ -23,7 +23,7 @@ client.once('ready', async () => {
     console.log('Ready!');
     console.log(client.user.setActivity("Go! Child - The Masquerade | "+lyrics[Math.floor(Math.random()*lyrics.length)],{type: "LISTENING"}))
     client.setInterval(()=>{
-        console.log(client.user.setActivity("Go! Child - The Masquerade | "+lyrics[Math.floor(Math.random()*lyrics.length)],{type: "LISTENING"}))
+        client.user.setActivity("Go! Child - The Masquerade | "+lyrics[Math.floor(Math.random()*lyrics.length)],{type: "LISTENING"})
     },10*60*1000)
 });
 
