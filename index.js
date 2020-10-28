@@ -11,24 +11,26 @@ client.once('ready', () => {
 });
 
 client.on("message",async (message)=>{
+    if(!message.guild) return
     if(message.content != "!mask") return
 
-    if(!message.guild.me.permissions.has("MANAGE_NICKNAMES")) return message.channel.send("Missing Permissions to change nickname!")
+    if(!message.guild.me.permissions.has("MANAGE_NICKNAMES")) return message.channel.send("Missing Permissions to change nickname! You cannot don the mask of **"+toTitleCase(randName(message.author.id+message.guild.id))+"**")
 
-    if(message.guild.me.roles.highest.position <= message.member.roles.highest.position) return message.channel.send("My role is too low to change your nickname!")
+    if(message.guild.me.roles.highest.position <= message.member.roles.highest.position) return message.channel.send("My role is too low to change your nickname! You cannot don the mask of **"+toTitleCase(randName(message.author.id+message.guild.id))+"**")
     
     try{
-        await message.member.setNickname(toTitleCase(randName(message.author.id)))
+        await message.member.setNickname(toTitleCase(randName(message.author.id+message.guild.id)))
     } catch(e){
         switch(e.message){
             case "Missing Permissions":
-                return message.channel.send("Missing Permissions to change your nickname! (if you are owner of the server, sadly this bot cannot change your nickname)")
+                return message.channel.send("Missing Permissions to change your nickname! You cannot don the mask of **"+toTitleCase(randName(message.author.id+message.guild.id))+"**")
                 break;
             default:
+                console.error(e);
                 return message.channel.send("Something went wrong...");
         }
     }
-    message.channel.send("*You don the mask of **"+toTitleCase(randName(message.author.id))+"***")
+    message.channel.send("*You don the mask of **"+toTitleCase(randName(message.author.id+message.guild.id))+"***")
 })
 
 function toTitleCase(str) {
