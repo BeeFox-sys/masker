@@ -1,8 +1,8 @@
 const seedrandom = require('seedrandom');
 const fs = require('fs')
-const adjectives = fs.readFileSync("adjectives.txt", "utf-8").split("\r\n")
-const nouns = fs.readFileSync("nouns.txt", "utf-8").split("\r\n")
-const emojis = fs.readFileSync("emoji.txt", "utf-8").split("\r\n")
+const adjectives = fs.readFileSync("adjectives.txt", "utf-8").replace("\r","").split("\n")
+const nouns = fs.readFileSync("nouns.txt", "utf-8").replace("\r","").split("\n")
+const emojis = fs.readFileSync("emoji.txt", "utf-8").replace("\r","").split("\n")
 
 function randomName(id){
     let rng = seedrandom(id);
