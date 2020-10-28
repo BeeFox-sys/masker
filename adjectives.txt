@@ -48,6 +48,7 @@ aqua
 aquatic
 arctic
 arid
+aristocratic
 armed
 asleep
 astral
@@ -79,6 +80,7 @@ blank
 bleak
 blond
 blonde
+bloodthirsty
 bloody
 blue
 bogus
@@ -117,6 +119,7 @@ caring
 casual
 causal
 charming
+chartreuse
 cheap
 cheeky
 cheerful
@@ -143,6 +146,7 @@ clumsy
 coarse
 cold
 colourful
+commodious
 common
 cooing
 cooked
@@ -162,6 +166,7 @@ crude
 cruel
 crunchy
 cuddly
+cumbersome
 curly
 curved
 curvy
@@ -178,12 +183,14 @@ dear
 decent
 deep
 deeply
+delightful
 dense
 dental
 dim
 direct
 dirty
 dismal
+distracted
 divine
 dizzy
 dopey
@@ -218,6 +225,7 @@ eldest
 elegant
 elfin
 elite
+embiggened
 emerald
 empty
 entire
@@ -277,6 +285,7 @@ four
 fragile
 frail
 frank
+fraudulent
 frayed
 free
 fresh
@@ -382,6 +391,8 @@ ill
 imaginary
 impish
 impure
+incomprehensible
+indubitably
 inland
 innate
 inner
@@ -469,9 +480,11 @@ marked
 mass
 meager
 mean
+meaningless
 measly
 medium
 meek
+melancholy
 mellow
 melodic
 melted
@@ -551,6 +564,7 @@ painless
 paisley
 pale
 paltry
+paradoxical
 pastel
 peaceful
 peach
@@ -558,6 +572,7 @@ perfect
 pesky
 petite
 petty
+phenomenal
 phony
 pink
 piquant
@@ -594,6 +609,7 @@ quirky
 quixotic
 ragged
 rainy
+ramshackle
 random
 rapid
 rash
@@ -604,6 +620,7 @@ real
 rebel
 recent
 red
+reflective
 regal
 regretful
 remote
@@ -639,6 +656,7 @@ sacred
 sad
 safe
 salty
+salubrious
 same
 sandy
 sassy
@@ -647,6 +665,7 @@ scaly
 scarce
 scared
 scary
+scintillating
 scratchy
 scrawny
 second
@@ -784,6 +803,7 @@ thirsty
 this
 thorny
 those
+thoughtful
 three
 tidy
 timely
@@ -796,6 +816,7 @@ total
 tough
 toxic
 tragic
+transparent
 trashy
 tricky
 trite
@@ -806,6 +827,7 @@ two
 ultra
 unable
 uncouth
+undulating
 uneven
 unfair
 unique
@@ -817,6 +839,7 @@ untidy
 untrue
 unused
 unusual
+unwavering
 upbeat
 upper
 uppity
@@ -839,11 +862,13 @@ velvety
 versed
 very
 vexed
+victorious
 violet
 viscous
 visual
 vital
 vivid
+voluminous
 wacky
 wan
 warm
