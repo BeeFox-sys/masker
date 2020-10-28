@@ -1,7 +1,6 @@
 !
 ?
 able
-abomination
 accord
 act
 action
@@ -62,7 +61,6 @@ august
 aunt
 aura
 author
-automobile
 avenue
 babies
 baboon
@@ -235,7 +233,6 @@ capers
 car
 carapace
 carbon
-carburetor
 card
 care
 carol
@@ -261,7 +258,6 @@ cello
 cement
 cent
 cereal
-cerebellum
 cerium
 cesium
 chain
@@ -274,7 +270,6 @@ chard
 check
 cheek
 cheese
-cheeseball
 cheetah
 chef
 cheque
@@ -343,7 +338,6 @@ comedy
 comet
 comic
 comma
-compliment
 condor
 cone
 congo
@@ -385,7 +379,6 @@ crow
 crowd
 crown
 crumbs
-crunchtada
 crush
 crust
 cry
@@ -659,7 +652,6 @@ grain
 gram
 grape
 grass
-grasshopper
 gray
 grease
 green
@@ -807,7 +799,6 @@ kitten
 kitty
 knee
 kneecap
-knickerbocker
 knife
 knight
 knot
@@ -912,7 +903,6 @@ may
 meal
 media
 medium
-melancholy
 melody
 memory
 meniscus
@@ -921,7 +911,6 @@ metal
 meter
 miasma
 mice
-microphone
 middle
 mile
 milk
@@ -951,7 +940,6 @@ moose
 mora
 mother
 motion
-motorcycle
 mountain
 mouse
 mouth
@@ -1002,7 +990,6 @@ ocelot
 octave
 octopus
 offer
-okonomyaki
 okra
 old
 oleander
@@ -1072,7 +1059,6 @@ pen
 pencil
 penguin
 penny
-pentatomid
 peony
 pepper
 perch
@@ -1244,7 +1230,6 @@ sale
 saliva
 salmon
 salt
-san francisco
 sand
 santa
 sasquatch
@@ -1322,7 +1307,6 @@ sitter
 six
 size
 skate
-skateboard
 skates
 ski
 skiing
@@ -1594,7 +1578,6 @@ walu
 warm
 wash
 washer
-washing machine
 wasp
 waste
 watch
@@ -1633,7 +1616,6 @@ wool
 woolen
 word
 work
-workerplacementgames
 world
 worm
 wrasse
