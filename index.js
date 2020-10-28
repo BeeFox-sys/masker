@@ -27,7 +27,7 @@ client.on("message",async (message)=>{
                 break;
             default:
                 console.error(e);
-                console.error(toTitleCase(randName(message.author.id+message.guild.id)).length)
+                console.error(toTitleCase(randName(message.author.id+message.guild.id)))
                 return message.channel.send("Something went wrong...");
         }
     }
