@@ -6,12 +6,25 @@ const randName = require("./name");
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+let lyrics = [
+    "We're breaking free and singing!",
+    "The bad things in our life can't stop these joyful overtones",
+    "I'm too afraid to be alone",
+    "And though it's hard to cope, With such a narrow road, I'll pay my dues with hope, For the unknown",
+    "You always get in my mind, It hasn't stopped being the same since you told me your name",
+    "No rhyme or reason, just a smile, That's only growing wider",
+    "Keep my head turned towards the skies, I don't want this demise, If I need beauty, Will you be here",
+    "You're worth the fight, You are strong and you can overcome it",
+    "One look around, Shows me a lot of promise, The peaceful sound, The potential inside us, Our time is now",
+    "This crowd is finally free, We've finally escaped the Masquerade",
+    "Oh, if you hear me call will you show me the way to go"
+]
 client.once('ready', async () => {
     console.log('Ready!');
-    client.user.setActivity("Go! Child - The Masquerade | We're breaking free and singing!",{type: "LISTENING"})
+    console.log(client.user.setActivity("Go! Child - The Masquerade | "+lyrics[Math.floor(Math.random()*lyrics.length)],{type: "LISTENING"}))
     client.setInterval(()=>{
-        client.user.setActivity("Go! Child - The Masquerade | We're breaking free and singing!",{type: "LISTENING"})
-    },60*5*1000)
+        console.log(client.user.setActivity("Go! Child - The Masquerade | "+lyrics[Math.floor(Math.random()*lyrics.length)],{type: "LISTENING"}))
+    },10*60*1000)
 });
 
 client.on("message",async (message)=>{
@@ -48,3 +61,9 @@ function toTitleCase(str) {
   }
 
 client.login(process.env.TOKEN);
+
+process.on('SIGTERM', () => {
+    client.destroy(() => {
+      console.log('Process terminated')
+    })
+  })
