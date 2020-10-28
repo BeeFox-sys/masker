@@ -6,8 +6,12 @@ const randName = require("./name");
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.once('ready', () => {
-	console.log('Ready!');
+client.once('ready', async () => {
+    console.log('Ready!');
+    client.user.setActivity("Go! Child - The Masquerade | We're breaking free and singing!",{type: "LISTENING"})
+    client.setInterval(()=>{
+        client.user.setActivity("Go! Child - The Masquerade | We're breaking free and singing!",{type: "LISTENING"})
+    },60*5*1000)
 });
 
 client.on("message",async (message)=>{
