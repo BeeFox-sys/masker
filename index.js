@@ -7,17 +7,10 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 let lyrics = [
-    "We're breaking free and singing!",
-    "The bad things in our life can't stop these joyful overtones",
-    "I'm too afraid to be alone",
-    "And though it's hard to cope, With such a narrow road, I'll pay my dues with hope, For the unknown",
-    "You always get in my mind, It hasn't stopped being the same since you told me your name",
-    "No rhyme or reason, just a smile, That's only growing wider",
-    "Keep my head turned towards the skies, I don't want this demise, If I need beauty, Will you be here",
-    "You're worth the fight, You are strong and you can overcome it",
-    "One look around, Shows me a lot of promise, The peaceful sound, The potential inside us, Our time is now",
-    "This crowd is finally free, We've finally escaped the Masquerade",
-    "Oh, if you hear me call will you show me the way to go"
+    "Willkommen, bienvenue, welcome!",
+    "Fremde, étranger, stranger",
+    "Glücklich zu sehen, je suis enchanté, happy to see you",
+    "Bleibe, reste, stay"
 ]
 client.once('ready', async () => {
     console.log('Ready!');
@@ -29,7 +22,7 @@ client.once('ready', async () => {
 
 client.on("message",async (message)=>{
     if(!message.guild) return
-    if(message.content != "?mask") return
+    if(message.content != "?ticket") return
 
     if(!message.guild.me.permissions.has("MANAGE_NICKNAMES")) return message.channel.send("Missing Permissions to change nickname! You cannot don the mask of **"+toTitleCase(randName(message.author.id+message.guild.id))+"**")
 
@@ -48,7 +41,7 @@ client.on("message",async (message)=>{
                 return message.channel.send("Something went wrong...");
         }
     }
-    message.channel.send("*You don the mask of **"+toTitleCase(randName(message.author.id+message.guild.id))+"***")
+    message.channel.send("*Your ticket reads **"+toTitleCase(randName(message.author.id+message.guild.id))+"***")
 })
 
 function toTitleCase(str) {
